@@ -5,7 +5,7 @@
     "permissions": ["declarativeContent", "storage"],
     "content_scripts": [{
         "js": ["jquery-3.5.1.js", "content.js"],
-        "matches": ["https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/classRegistration/classRegistration"]
+        "matches": ["https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/termSelection?mode=registration", "https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/classRegistration/classRegistration"]
     }],
     "browser_action": {
         "default_popup": "popup.html"
