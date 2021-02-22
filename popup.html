@@ -1,0 +1,62 @@
+<!--User-controlled settings:
+1. GPA datasets selected: RECENT, ALL*
+2. Professor redirect: RMP No filters, RMP UIUC filter*
+3. GPA color thresholds: Custom, min-max* -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div id="contain-all">
+      <h1>Configuration for Registration</h1>
+      <div id="contain-input">
+        <p>Rate My Professor</p>
+        <div class="setting" id="filter">
+          <span class="setting name">No filter</span>&nbsp;
+          <label class="switch">
+            <input type="checkbox" checked>
+          <span class="slider round"></span>
+          </label>
+          &nbsp;<span class="setting name">UIUC filter</span>
+        </div>
+        <br />
+        <p>GPA Dataset</p>
+        <div class="setting" id="gpa-age">
+          <span class="setting name">Recent</span>&nbsp;
+          <label class="switch">
+            <input type="checkbox" checked>
+          <span class="slider round"></span>
+          </label>
+          &nbsp;<span class="setting name">All</span>
+        </div>
+        <br />
+        <p>Initials</p>
+        <div class="setting" id="middle">
+          <span class="setting name">On</span>&nbsp;
+          <label class="switch">
+            <input type="checkbox" checked>
+          <span class="slider round"></span>
+          </label>
+          &nbsp;<span class="setting name">Off</span>
+        </div>
+        <br />
+        <p>Default Number of Courses</p>
+        <div class="setting radios" id="num-courses">
+          <input type="radio" id="10" name="courses" value="10" checked>
+            <label for="10">10</label>&nbsp;
+          <input type="radio" id="15" name="courses" value="15">
+            <label for="15">15</label>&nbsp;
+          <input type="radio" id="20" name="courses" value="20">
+            <label for="20">20</label>&nbsp;
+          <input type="radio" id="50" name="courses" value="50">
+            <label for="50">50</label>
+        </div>
+        <br />
+      </div>
+    </div>
+  <script type="text/javascript" src="jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="popup.js"></script>
+  </body>
+</html>

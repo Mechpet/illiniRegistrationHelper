@@ -1,0 +1,153 @@
+html {
+    background-color: rgb(1, 12, 77);
+    width: 400px;
+    height: 500px;
+    color: white;
+}
+
+h1 {
+    line-height: 20px;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 black,
+        0   -1px 0 black,
+        1px -1px 0 black,
+        1px  0   0 black,
+        1px  1px 0 black,
+        0    1px 0 black,
+        -1px  1px 0 black,
+        -1px  0   0 black;
+}
+
+p {
+    font-size: 14px;
+    text-align: center;
+}
+
+div {
+    border-radius: 7px;
+}
+
+#contain-all {
+    position: absolute;
+    border: solid 3px rgb(1, 16, 99);
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 450px;
+    margin: -225px 0px 0px -175px;
+    background-color: rgb(50, 50, 209);
+}
+
+#contain-input {
+    height: 400px;
+    background-color: rgb(38, 38, 202);
+    border-top: solid 1px darkblue;
+    border-bottom: solid 1px darkblue;
+}
+
+.setting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.setting.name {
+    min-width: 100px;
+    background-color: rgb(21, 32, 124);
+    border-radius: 30px;
+}
+
+/* w3schools */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+  
+.switch input { 
+    opacity: 1;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(192, 177, 165);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 0px;
+    bottom: 0px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: rgb(255, 186, 159);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(255, 186, 159);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+}
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.setting.radios {
+    font-size: 25px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label {
+    transition: 1s background-color;
+    background-color: grey;
+    padding: 5px 10px;
+    border-radius: 60px;
+    margin: 0px 3px;
+    text-shadow:
+        -1px -1px 0 grey,
+        0   -1px 0 grey,
+        1px -1px 0 grey,
+        1px  0   0 grey,
+        1px  1px 0 grey,
+        0    1px 0 grey,
+        -1px  1px 0 grey,
+        -1px  0   0 grey;
+}
+
+input[type="radio"]:checked+label {
+    background-color: rgb(255, 186, 159);
+}
+
+input[type="radio"]:not(:checked)+label {
+    background-color: rgb(192, 177, 165);
+}

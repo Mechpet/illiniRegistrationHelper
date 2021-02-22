@@ -1,0 +1,14 @@
+{
+    "name": "Illini Registration Helper",
+    "version": "0.1.0",
+    "description": "UIUC Banner: get quick RMP links and GPA of courses instantly.",
+    "permissions": ["declarativeContent", "storage"],
+    "content_scripts": [{
+        "js": ["jquery-3.5.1.js", "content.js"],
+        "matches": ["https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/classRegistration/classRegistration"]
+    }],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2
+}
