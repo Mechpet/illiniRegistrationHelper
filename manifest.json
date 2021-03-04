@@ -1,6 +1,6 @@
 {
     "name": "Illini Registration Helper",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "description": "UIUC Banner: get quick RMP links and GPA of courses instantly.",
     "permissions": ["declarativeContent", "storage"],
     "content_scripts": [{

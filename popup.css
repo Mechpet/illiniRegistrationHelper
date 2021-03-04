@@ -1,7 +1,7 @@
 html {
     background-color: rgb(1, 12, 77);
     width: 400px;
-    height: 500px;
+    height: 600px;
     color: white;
 }
 
@@ -34,13 +34,13 @@ div {
     top: 50%;
     left: 50%;
     width: 350px;
-    height: 450px;
-    margin: -225px 0px 0px -175px;
+    height: 550px;
+    margin: -275px 0px 0px -175px;
     background-color: rgb(50, 50, 209);
 }
 
 #contain-input {
-    height: 400px;
+    height: 500px;
     background-color: rgb(38, 38, 202);
     border-top: solid 1px darkblue;
     border-bottom: solid 1px darkblue;
@@ -150,4 +150,31 @@ input[type="radio"]:checked+label {
 
 input[type="radio"]:not(:checked)+label {
     background-color: rgb(192, 177, 165);
+}
+
+input[type="number"] {
+    font: inherit;
+    color: inherit;
+    width: 75px;
+    background-color: rgb(21, 32, 124);
+    border: none;
+    border-radius: 30px;
+}
+
+#range {
+    margin: 0px 10px;
+    min-width: 150px;
+}
+
+.ui-slider .ui-slider-handle:first-of-type {
+    background-color: hsl(0,100%,50%);
+}
+
+.ui-slider .ui-slider-handle {
+    background-color: hsl(120,100%,50%);
+    border-radius: 15px;
+}
+
+.ui-slider .ui-slider-range {
+    background: linear-gradient(to right, hsl(0,100%,50%), hsl(120,100%,50%));
 }
